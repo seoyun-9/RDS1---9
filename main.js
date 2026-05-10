@@ -125,7 +125,7 @@ window.onload = () => {
                 layer.style.height = "100%";
                 layer.style.backgroundSize = "cover";
                 layer.style.backgroundPosition = "center";
-                layer.style.opacity = "0.5";
+                layer.style.opacity = "0.8";
                 layer.style.pointerEvents = "none";
                 layer.style.top = `${(layers.length + 1) * gap}px`;
                 layer.style.zIndex = layers.length;
