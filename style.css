@@ -1,8 +1,11 @@
 body {
-    background-color: #ffffff;
+    background-color: #000000;
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 100vh;
+    cursor: url('cursor.png') 0 0, auto;
 }
 
 .archive-container {
@@ -25,13 +28,14 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -12px;
+    bottom: -0.7vw;
     color: #FF0090;
-    font-size: 1.5vw;
-    z-index: 1000; /* 100 → 1000 */
-    cursor: pointer;
+    font-size: 1vw;
+    z-index: 99999; /* 1000 → 99999 */
+    cursor: pointer !important;
     line-height: 1;
     overflow: visible;
+    text-shadow: 0 3px 6px rgba(255, 0, 144, 0.5);
 }
 
 .image-tape, .overlay {
@@ -68,4 +72,12 @@ body {
 
 .meta-label {
     font-weight: bold;
+}
+
+#timer {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
 }
